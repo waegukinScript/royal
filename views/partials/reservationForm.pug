@@ -1,0 +1,36 @@
+form(action='/event' method='POST')
+                .boking_table
+                  .row
+                    .col-md-4
+                      .book_tabel_item
+                        .form-group
+                          #datetimepicker11.input-group.date
+                            input.form-control(type='text', placeholder='Arrival Date',name='eventDateIn')
+                            span.input-group-addon
+                              i.fa.fa-calendar(aria-hidden='true')
+                        .form-group
+                          #datetimepicker1.input-group.date
+                            input.form-control(type='text', placeholder='Departure Date',name='eventDateOut')
+                            span.input-group-addon
+                              i.fa.fa-calendar(aria-hidden='true')
+                    .col-md-4
+                      .book_tabel_item
+                        .input-group
+                          select.wide(name='adults')
+                            option(data-display='Adult',value='Adult') Select Adult
+                            option(value='old') Old
+                            option(value='Younger') Younger
+                            option(value='Potato') Potato
+                        .input-group
+                          select.wide(name='children')
+                            option(data-display='Child',value='Child') Child
+                            option(value='Baby') Baby
+                    .col-md-4
+                      .book_tabel_item
+                        .input-group
+                          select.wide(name='rooms')
+                            option(data-display='Room 01',value='1') Room 01
+                            option(value='2') Room 02
+                            option(value='3') Room 03
+                        //- a.book_now_btn.button_hover(href='#') Book Now
+                        input.book_now_btn.button_hover(type='submit' value='Book Now')

@@ -1,0 +1,54 @@
+doctype html
+html(lang='en')
+  head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='icon', href='image/favicon.png', type='image/png')
+    title Royal Hotel
+    // Bootstrap CSS
+    link(rel='stylesheet', href='css/bootstrap.css')
+    link(rel='stylesheet', href='vendors/linericon/style.css')
+    link(rel='stylesheet', href='css/font-awesome.min.css')
+    link(rel='stylesheet', href='vendors/owl-carousel/owl.carousel.min.css')
+    link(rel='stylesheet', href='vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css')
+    link(rel='stylesheet', href='vendors/nice-select/css/nice-select.css')
+    link(rel='stylesheet', href='vendors/owl-carousel/owl.carousel.min.css')
+    // main css
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/responsive.css')
+  body
+    // ================Header Area =================
+    header.header_area
+      .container
+        nav.navbar.navbar-expand-lg.navbar-light
+          // Brand and toggle get grouped for better mobile display
+          a.navbar-brand.logo_h(href='index.html')
+            img(src='image/Logo.png', alt='')
+          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          // Collect the nav links, forms, and other content for toggling
+          #navbarSupportedContent.collapse.navbar-collapse.offset
+            ul.nav.navbar-nav.menu_nav.ml-auto
+              li.nav-item.active
+                a.nav-link(href='/') Home
+              li.nav-item
+                a.nav-link(href='/about') About us
+              li.nav-item
+                a.nav-link(href='/accomodation') Accomodation
+              li.nav-item
+                a.nav-link(href='/gallery') Gallery
+              li.nav-item.submenu.dropdown
+                a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Blog
+                ul.dropdown-menu
+                  li.nav-item
+                    a.nav-link(href='/blog') Blog
+                  li.nav-item
+                    a.nav-link(href='/blog-single') Blog Details
+              li.nav-item
+                a.nav-link(href='/elements') Elemests
+              li.nav-item
+                a.nav-link(href='/contact') Contact
+    // ================Header Area =================

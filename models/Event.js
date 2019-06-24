@@ -5,6 +5,7 @@ const eventSchema = new mongoose.Schema({
   eventDateOut: String,
   adults: String,
   children: String,
+  rooms: String,
   createdAt: String
 }, { timestamps: true });
 

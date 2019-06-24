@@ -22,43 +22,7 @@ block content
                 br
                 |  Your Room
             .col-md-9
-              .boking_table
-                .row
-                  .col-md-4
-                    .book_tabel_item
-                      .form-group
-                        #datetimepicker11.input-group.date
-                          input.form-control(type='text', placeholder='Arrival Date')
-                          span.input-group-addon
-                            i.fa.fa-calendar(aria-hidden='true')
-                      .form-group
-                        #datetimepicker1.input-group.date
-                          input.form-control(type='text', placeholder='Departure Date')
-                          span.input-group-addon
-                            i.fa.fa-calendar(aria-hidden='true')
-                  .col-md-4
-                    .book_tabel_item
-                      .input-group
-                        select.wide
-                          option(data-display='Adult') Adult
-                          option(value='1') Old
-                          option(value='2') Younger
-                          option(value='3') Potato
-                      .input-group
-                        select.wide
-                          option(data-display='Child') Child
-                          option(value='1') Child
-                          option(value='2') Baby
-                          option(value='3') Child
-                  .col-md-4
-                    .book_tabel_item
-                      .input-group
-                        select.wide
-                          option(data-display='Child') Number of Rooms
-                          option(value='1') Room 01
-                          option(value='2') Room 02
-                          option(value='3') Room 03
-                      a.book_now_btn.button_hover(href='#') Book Now
+              include partials/reservationForm
     // ================Banner Area =================
     // ================ Accomodation Area  =================
     section.accomodation_area.section_gap

@@ -11,6 +11,7 @@ exports.postEvent = (req, res, next) => {
     eventDateOut: obj.eventDateOut,
     adults: obj.adults,
     children: obj.children,
+    rooms: obj.rooms
   });
   event.save((err) => {
     if (err) {
